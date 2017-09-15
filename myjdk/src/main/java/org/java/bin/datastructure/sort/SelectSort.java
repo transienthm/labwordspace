@@ -1,7 +1,5 @@
 package org.java.bin.datastructure.sort;
 
-import sun.jvm.hotspot.ui.table.SortHeaderCellRenderer;
-
 import java.lang.reflect.Method;
 
 /**

@@ -16,5 +16,10 @@ CREATE TABLE `user` (
 DROP TABLE IF EXISTS `order_basic`;
 
 CREATE TABLE `order_basic` (
-  `id` BIGINT(20)
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `user_id` BIGINT(20) NOT NULL COMMENT '',
+  `order_status` INT(11) NOT NULL COMMENT '',
+  `total_price` INT(11) NOT NULL COMMENT '',
+  `total_settlement_price` INT(11) NOT NULL COMMENT '',
+  `address` MEDIUMTEXT COMMENT '',
 )
