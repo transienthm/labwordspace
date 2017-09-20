@@ -14,7 +14,11 @@ CREATE TABLE `user` (
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 DROP TABLE IF EXISTS `order_basic`;
-
 CREATE TABLE `order_basic` (
-  `id` BIGINT(20)
+  `id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` BIGINT(20) UNSIGNED NOT NULL COMMENT '用户Id',
+  `order_status` INT(4) NOT NULL COMMENT '订单状态',
+  `total_price` INT(11) NOT NULL COMMENT '订单总价',
+
+
 )
