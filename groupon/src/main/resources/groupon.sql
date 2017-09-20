@@ -15,10 +15,19 @@ CREATE TABLE `user` (
 
 DROP TABLE IF EXISTS `order_basic`;
 CREATE TABLE `order_basic` (
+<<<<<<< HEAD
   `id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` BIGINT(20) UNSIGNED NOT NULL COMMENT '用户Id',
   `order_status` INT(4) NOT NULL COMMENT '订单状态',
   `total_price` INT(11) NOT NULL COMMENT '订单总价',
 
 
+=======
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `user_id` BIGINT(20) NOT NULL COMMENT '',
+  `order_status` INT(11) NOT NULL COMMENT '',
+  `total_price` INT(11) NOT NULL COMMENT '',
+  `total_settlement_price` INT(11) NOT NULL COMMENT '',
+  `address` MEDIUMTEXT COMMENT '',
+>>>>>>> 5c16911cee998157812bf532100ec895435a314c
 )

@@ -1,8 +1,5 @@
 package org.java.bin.pattern.singleton;
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
-
-import java.io.ObjectInputStream;
 import java.io.Serializable;
 
 /**
