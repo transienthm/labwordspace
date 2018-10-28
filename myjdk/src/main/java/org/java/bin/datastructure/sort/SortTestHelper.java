@@ -1,5 +1,7 @@
 package org.java.bin.datastructure.sort;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Random;
@@ -35,6 +37,18 @@ public class SortTestHelper {
         }
         for (int i = 1; i < a.length; i++) {
             if (a[i - 1].compareTo(a[i]) > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isSorted(int[] a) {
+        if (a == null || a.length == 0) {
+            return false;
+        }
+        for (int i = 1; i < a.length; i++) {
+            if (a[i - 1] > a[i]) {
                 return false;
             }
         }

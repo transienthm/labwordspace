@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "contracts"
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay"
+	}
+}
